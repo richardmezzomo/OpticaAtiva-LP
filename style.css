@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+
+}
+
+.active {
+  display: none;
+}
+
+header {
+  background: #F8F4F0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.3rem 2.5rem 1rem
+}
+
+.heading button {
+  border: none;
+  background-color: transparent;
+}
+
+.heading button:hover {
+  cursor: pointer;
+}
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+padding: 4.5rem 0 0 3.8rem;
+  
+}
+
+.options a {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-align: center;
+
+  color: #EC4926;
+  text-decoration: none;
+}
+
+.options a:hover {
+  font-weight: 400;
+}
+
+.navigation div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 4.5rem auto 25.2rem;
+}
+
+.navigation button {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  background: #EC4926;
+  border-radius: 2.5rem;
+
+  padding: 1.3rem 3rem;
+  border: none;
+}
+
+.navigation button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.social-medias {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 25.2rem;
+}
+
+.social-medias li:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
