@@ -214,11 +214,11 @@ main button a {
   display: none;
 }
 
-.services {
+.delta {
   padding: 3rem 2.5rem;
 }
 
-.services h2 {
+.delta h2 {
   font-family: 'DM Sans';
   font-size: 3rem;
   margin-bottom: .5rem;
@@ -226,7 +226,7 @@ main button a {
   color: #212529;
 }
 
-.services span {
+.delta span {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 1.5rem;
@@ -237,7 +237,7 @@ main button a {
   
 }
 
-.services p {
+.delta p {
   font-family: 'DM Sans';
   font-weight: 400;
   font-size: 1.6rem;
@@ -246,12 +246,12 @@ main button a {
   margin-top: .5rem;
 }
 
-.services div {
+.delta div {
   display: flex;
   justify-content: center;
 }
 
-.services button {
+.delta button {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 1.8rem;
@@ -264,9 +264,61 @@ main button a {
   border: none;
 
   padding: 1.3rem 5.3rem;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
-.services button:hover {
+.delta button:hover {
   cursor: pointer;
 }
+
+.services {
+  background-color: #EC4926;
+  padding: 3rem 2.5rem;
+}
+
+.services h3 {
+  font-family: 'DM Sans';
+  font-size: 1.5rem;
+
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+
+  color: #F8F4F0;
+}
+
+.services h1 {
+  font-family: 'DM Sans';
+  font-size: 3rem;
+
+  color: #FFFAFA;
+}
+
+.optics,
+.fixes {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.optics {
+  margin: 3rem 0;
+}
+
+.optics h2,
+.fixes h2 {
+  font-family: 'DM Sans';
+  font-size: 2.4rem;
+
+  color: #212529;
+  margin-bottom: 2rem;
+
+}
+
+.optics p,
+.fixes p {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+
+  color: #495057;
+}
+
