@@ -32,10 +32,10 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-const swiper2 = new Swiper(".mySwiper2", {
+const swiperModels = new Swiper(".mySwiperModels", {
   slidesPerView: 4,
-  spaceBetween: 10,
   freeMode: true,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

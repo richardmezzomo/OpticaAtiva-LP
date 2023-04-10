@@ -322,3 +322,60 @@ main button a {
   color: #495057;
 }
 
+.about h2 {
+  font-family: 'DM Sans';
+  font-size: 1.5rem;
+
+  letter-spacing: 0.08em;
+
+  color: #EC4926;
+}
+
+.about h1 {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  
+  color: #212529;
+
+  margin: 2rem 0;
+}
+
+.about p {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+
+  color: #495057;
+}
+
+.about .swiper-container {
+  padding: 0 1rem;
+}
+
+.about .swiper.mySwiperModels {
+  margin-bottom: 2rem;
+}
+
+.about .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about .swiper-slide img {
+  width: 12.7rem;
+  height: 12.7rem;
+}
+
+.about .swiper-button-next::after,
+.about .swiper-button-prev::after,
+#prev,
+#next {
+  display: none;
+}
+
+.about .swiper-pagination {
+  display: none;
+}
