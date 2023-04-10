@@ -379,3 +379,65 @@ main button a {
 .about .swiper-pagination {
   display: none;
 }
+
+.footer {
+  background-color: #EC4926;
+  padding: 3rem 2.5rem;
+}
+
+.footer h4 {
+  font-family: 'DM Sans';
+  font-size: 3rem;
+
+  color: #FFFFFF;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.adress, .email {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  
+}
+
+.adress p, .email p {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+
+  color: #FFFFFF;
+}
+
+.social-medias-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2.1rem 0;
+}
+
+.footer-button {
+  display: flex;
+  justify-content: center;
+}
+
+.footer button {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.8rem;
+  
+  color: #EC4926;
+  border: none;
+  
+  padding: 1.3rem 3rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
