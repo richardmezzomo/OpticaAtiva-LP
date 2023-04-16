@@ -293,6 +293,7 @@ main button a {
 
   letter-spacing: 0.08em;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 
   color: #F8F4F0;
 }
@@ -336,6 +337,7 @@ main button a {
 .about h2 {
   font-family: 'DM Sans';
   font-size: 1.5rem;
+  text-transform: uppercase;
 
   letter-spacing: 0.08em;
 
@@ -467,7 +469,7 @@ main button a {
 
 /*===============================================================DESKTOP=========================================================*/
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 
   .logo {
     width: 15.6rem;
@@ -665,6 +667,72 @@ main button a {
     height: 75.9rem;
   }
 
+  .services {
+    padding: 3rem 8rem;
+  }
+
+  .services h3 {
+    font-size: 5rem;
+    text-transform: none;
+  }
+
+  .services h1 {
+    font-size: 2.5rem;
+  }
+
+  .services .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 4.5rem;
+  }
+
+  .content {
+    padding: 3rem 8rem;
+  }
+
+  .about .content h2 {
+    font-size: 5rem;
+    text-transform: none;
+  }
+
+  .about .content h1,
+  .about .content p {
+    font-size: 2.5rem;
+  }
+
+  .about .swiper-slide img {
+    width: 30rem;
+    height: 30rem;
+    gap: 1rem;
+  }
+
+  .footer h4 {
+    font-size: 5rem;
+  }
+
+  .footer p {
+    font-size: 2.5rem;
+  }
+
+  .social-medias-footer img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-medias-footer a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .footer-button {
+    font-size: 1.8rem;
+    padding: 1.6rem 6.5rem;
+  }
+
+  .footer-button button:hover {
+    opacity: 0.8;
+  }
 
 
 
