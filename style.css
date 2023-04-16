@@ -215,6 +215,18 @@ main button a {
 
 .delta {
   padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.delta200 img {
+  width: 37.5rem;
+  height: 31.2rem;
+}
+
+.delta200-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .delta h2 {
@@ -448,6 +460,11 @@ main button a {
 .CTA-desktop {
   display: none; 
 }
+
+.swiper-container-desktop {
+  display: none;
+}
+
 /*===============================================================DESKTOP=========================================================*/
 
 @media (min-width: 1024px) {
@@ -573,10 +590,80 @@ main button a {
     top: 4.5rem;
   }
 
-  .swiper-container {
+  .brands .swiper-container {
     display: none;
   }
 
+  .brands {
+    background-color: #F4EBEB;
+  }
+
+  .brands h2 {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2.2rem 0 5rem;
+
+  }
+
+  .swiper-container-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after,
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .swiper-pagination {
+    display: none;
+  }
+
+  .brands .swiper-slide img {
+    width: 20rem;
+    height: 20rem;    
+  }
+
+  .delta {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 5rem 8rem;
+  }
+
+  .delta200-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .delta200-content h2 {
+    font-size: 5rem;
+    
+  }
+
+  .delta200-content span, 
+  .delta200-content p {
+    font-size: 2.5rem;
+  }
+
+  .delta200-content button {
+    font-size: 2.2rem;
+    padding: 1.6rem 6.5rem;
+  }
+
+  .delta200-content button:hover {
+    opacity: 0.8;
+  }
+
+  .delta200 img {
+    width: 53.3rem;
+    height: 75.9rem;
+  }
 
 
 
