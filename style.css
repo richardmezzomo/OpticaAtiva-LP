@@ -109,10 +109,6 @@ ul, li, a {
   scale: 1.2;
 }
 
-.content {
-  margin: 2.8rem 2.5rem;
-}
-
 main span {
   font-family: 'DM Sans';
   font-weight: 700;
@@ -161,7 +157,7 @@ main button {
 
   padding: 1.3rem 3rem;
   background-color: transparent;
-  margin-top: 3.8rem;
+  margin: 3.8rem 0 3rem;
 }
 
 main button:hover {
@@ -170,6 +166,10 @@ main button:hover {
 
 main button a {
   color: #EC4926;
+}
+
+.content-home {
+  padding: 2rem 2.5rem;
 }
 
 .brands {
@@ -186,6 +186,10 @@ main button a {
   margin-bottom: 2rem;
 
   color: #212529;
+}
+
+.brands .swiper-container-desktop {
+  display: none;
 }
 
 .swiper-container {
@@ -287,6 +291,12 @@ main button a {
   padding: 3rem 2.5rem;
 }
 
+.services .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .services h3 {
   font-family: 'DM Sans';
   font-size: 1.5rem;
@@ -313,7 +323,7 @@ main button a {
 }
 
 .optics {
-  margin: 3rem 0;
+  margin: 3rem 0 0;
 }
 
 .optics h2,
@@ -332,6 +342,10 @@ main button a {
   font-size: 1.6rem;
 
   color: #495057;
+}
+
+.about {
+  padding: 3rem 2.5rem;
 }
 
 .about h2 {
@@ -363,7 +377,7 @@ main button a {
 }
 
 .about .swiper-container {
-  padding: 0 1rem;
+  padding: 3rem 0 0;
 }
 
 .about .swiper.mySwiperModels {
@@ -463,13 +477,13 @@ main button a {
   display: none; 
 }
 
-.swiper-container-desktop {
+.about .swiper-container-desktop {
   display: none;
 }
 
 /*===============================================================DESKTOP=========================================================*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
 
   .logo {
     width: 15.6rem;
@@ -579,14 +593,14 @@ main button a {
   .content-home {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 7.9rem;
+    padding-top: 7rem;
   }
 
   .img-home {
     background-image: url(./assets/images/img-home.png);
-    width: 516px;
-    height: 632px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 530px;
   }
 
   .brands .swiper-container {
@@ -598,16 +612,21 @@ main button a {
   }
 
   .brands h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
-    padding: 2.2rem 0 5rem;
-
+    padding: 2rem 0;
+    margin-bottom: 0rem;
   }
 
-  .swiper-container-desktop {
+  .brands .swiper-container-desktop {
     display: flex;
     align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .swiper-container {
+    display: none;
   }
 
   .swiper-button-next::after,
@@ -623,15 +642,15 @@ main button a {
   }
 
   .brands .swiper-slide img {
-    width: 20rem;
-    height: 20rem;    
+    width: 15rem;
+    height: 15rem;    
   }
 
   .delta {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    padding: 5rem 8rem;
+    gap: 17.9rem;
+    padding: 5rem 10rem;
   }
 
   .delta200-content {
@@ -641,13 +660,13 @@ main button a {
   }
 
   .delta200-content h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     
   }
 
   .delta200-content span, 
   .delta200-content p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .delta200-content button {
@@ -659,22 +678,26 @@ main button a {
     opacity: 0.8;
   }
 
+  .delta200-content p {
+    margin-top: 2rem;
+  }
+
   .delta200 img {
-    width: 53.3rem;
-    height: 75.9rem;
+    width: 38.1rem;
+    height: 54.2rem;
   }
 
   .services {
-    padding: 3rem 8rem;
+    padding: 3rem 10rem;
   }
 
   .services h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: none;
   }
 
   .services h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .services .wrap {
@@ -685,31 +708,51 @@ main button a {
   }
 
   .content {
-    padding: 0 8rem;
+    padding-left: 10rem;
+    margin-right: 15rem;
+    width: 100%;
   }
 
-  .about .content h2 {
-    font-size: 5rem;
+  .content-about {
+    padding: 3rem 10rem 0;
+  
+  }
+
+  .about .content-about h2 {
+    font-size: 4rem;
     text-transform: none;
   }
 
-  .about .content h1,
-  .about .content p {
-    font-size: 2.5rem;
+  .about .content-about h1,
+  .about .content-about p {
+    font-size: 1.8rem;
   }
 
-  .about .swiper-slide img {
-    width: 30rem;
-    height: 30rem;
-    gap: 1rem;
+  .about .swiper-container-desktop img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about .swiper-container-desktop {
+    display: flex;
+    padding: 5rem 0 2rem;
+  }
+
+  .swiper .mySwiperModels .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    padding: 3rem 8rem;
   }
 
   .footer h4 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .footer p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .social-medias-footer img {
@@ -730,14 +773,5 @@ main button a {
   .footer-button button:hover {
     opacity: 0.8;
   }
-
-
-
-
-
-
-
-
-
 }
 

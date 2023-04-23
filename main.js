@@ -26,6 +26,17 @@ menu.addEventListener('click', () => {
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   freeMode: true,
+  width: 500,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const swiperDesktop = new Swiper(".mySwiper-desktop", {
+  slidesPerView: 4,
+  freeMode: true,
+  width: 800,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -36,8 +47,24 @@ const swiperModels = new Swiper(".mySwiperModels", {
   slidesPerView: 4,
   freeMode: true,
   loop: true,
+  width: 600,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+const swiperModelsDesktop = new Swiper(".mySwiperModels-desktop", {
+  slidesPerView: 4,
+  freeMode: true,
+  loop: true,
+  width: 1000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
   },
 });
