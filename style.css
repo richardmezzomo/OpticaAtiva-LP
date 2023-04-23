@@ -14,6 +14,18 @@
   display: none;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+main {
+  padding-top: 12rem;
+}
+
 .heading {
   background: #F8F4F0;
   display: flex;
@@ -498,6 +510,14 @@ main button a {
     display: flex;
   }
 
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
   .heading {
     display: flex;
     align-items: center;
@@ -544,6 +564,10 @@ main button a {
   .CTA-desktop a:hover {
     cursor: pointer;
     opacity: 1;
+  }
+
+  main {
+    padding-top: 15rem;
   }
 
   main .content {
@@ -593,7 +617,7 @@ main button a {
   .content-home {
     display: flex;
     justify-content: space-between;
-    padding-top: 7rem;
+    padding: 0;
   }
 
   .img-home {
@@ -718,6 +742,10 @@ main button a {
   
   }
 
+  .about {
+    padding: 0;
+  }
+
   .about .content-about h2 {
     font-size: 4rem;
     text-transform: none;
@@ -744,7 +772,7 @@ main button a {
   }
 
   .footer {
-    padding: 3rem 8rem;
+    padding: 3rem 10rem;
   }
 
   .footer h4 {
