@@ -18,80 +18,53 @@
   <script src="main.js" defer></script>
 </head>
 <body>
-  <section id="home" class="home">
-    <header>
-      <div class="heading">
-        <img src="./assets/logo.svg" alt="" class="logo">
-        
-        <button class="menu-mobile" onclick="clickMenu()">
-          <img src="./assets/open-menu.svg" alt="" class="open">
-          <img src="./assets/close-menu.svg" alt="" class="close active">
-        </button>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a href="#home" class="logo">
+        <img src="./assets/logo.svg" alt="logo Óptica Ativa">
+      </a>
 
-        <nav class="menu-desktop">
-          <ul class="options-desktop">
-            <li>
-              <a id="homeLink" href="#">Início</a>
-            </li>
-            <li>
-              <a id="servicesLink" href="#">Serviços</a>
-            </li>
-            <li>
-              <a id="aboutLink" href="#">Sobre</a>
-            </li>
-            <li>
-              <a id="contactLink" href="#">Entre em contato</a>
-            </li>
-          </ul>
-        </nav>
-        
+      <div class="menu">
 
-        <button class="CTA-desktop">
-          <a href="">FALE CONOSCO</a>
-        </button>
-      </div>
-
-      <nav class="navigation active">
-        <ul class="options">
-          <li>
-            <a href="home">Início</a>
-          </li>
-          <li>
-            <a href="services">Serviços</a>
-          </li>
-          <li>
-            <a href="about">Sobre</a>
-          </li>
-          <li>
-            <a href="footer">Entre em contato</a>
-          </li>
+        <ul>
+          <li><a href="">Início</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Entre em contato</a></li>
         </ul>
 
+        <a href="#footer" class="button">
+          Fale conosco
+        </a>
 
-        <div>
-          <button>
-            FALE CONOSCO
-          </button>
-          <ul class="social-medias">
-            <li>
-              <a target="_blank" href="">
-                <img src="./assets/whatsapp.svg" alt="">
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.instagram.com/opticaativa/">
-                <img src="./assets/instagram.svg" alt="">
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.facebook.com/opticaativa">
-                <img src="./assets/facebook.svg" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <ul class="social-links">
+          <li>
+            <a href="">
+              <img src="./assets/whatsapp.svg" alt="logo whatsapp">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/instagram.svg" alt="logo instagram">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/facebook.svg" alt="logo facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button>
+        <img src="./assets/open-menu.svg" alt="">
+      </button>
+      <button>
+        <img src="./assets/close-menu.svg" alt="">
+      </button>
+    </div>
+  </nav>
+  <section id="home" class="home">
     <main>
       <div class="content-home">
         <div class="content">
