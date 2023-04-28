@@ -466,6 +466,36 @@ figcaption {
   
 }
 
+/*====================== ABOUT ================================*/
+#about {
+  padding: calc(3rem - var(--nav-height));
+  padding: 3rem 0 3rem;
+  text-align: left;
+}
+
+#about .content header h6 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: var(--span-color);
+  padding-bottom: 2rem;
+}
+
+#about .content header h3 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  padding-bottom: 2rem;
+}
+
+#about .content p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph-color);
+  padding-bottom: 2rem;
+}
+
+
+
 /* ===================== BACK TO TOP ============================ */
 #backToTopButton {
   position: fixed;
