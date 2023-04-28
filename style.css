@@ -158,12 +158,6 @@ nav .wrap {
   padding: 3.1rem 0 1.2rem;
 }
 
-
-/* nav.scroll {
-  CONFERIR COM A ENDIE SOBRE O SCROLL
-  background: var(--primary-color);
-} */
-
 nav button {
   background: none;
   border: none;
@@ -468,7 +462,6 @@ figcaption {
 
 /*====================== ABOUT ================================*/
 #about {
-  padding: calc(3rem - var(--nav-height));
   padding: 3rem 0 3rem;
   text-align: left;
 }
@@ -494,7 +487,59 @@ figcaption {
   padding-bottom: 2rem;
 }
 
+#about .swiper-container {
+  padding: 3rem 0 0;
+}
 
+#about .swiper.mySwiperModels {
+  margin-bottom: 2rem;
+}
+
+#about .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+#about .swiper-slide img {
+  width: 12.7rem;
+  height: 12.7rem;
+}
+
+/* ======================= FOOTER ===============================*/
+
+#contact {
+  padding: 3rem 0 3rem;
+  background-color: var(--secondary-color);
+  text-align: left;
+}
+
+#contact .content header h6 {
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+
+#contact .content .contact .location, 
+#contact .content .contact .email {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+
+#contact .button {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#contact .button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
 
 /* ===================== BACK TO TOP ============================ */
 #backToTopButton {
@@ -507,6 +552,7 @@ figcaption {
 
   transform: translateY(100%);
   transition: 200ms;
+  z-index: 99999;
 }
 
 #backToTopButton.show {
