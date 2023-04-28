@@ -78,7 +78,7 @@ section header h2 {
   line-height: 3.9rem;
   text-align: left;
 
-  color: var(--headline);
+  color: var(--headline-color);
 }
 
 section header h1 {
@@ -135,13 +135,12 @@ section .content p {
   gap: 1.5rem;
 }
 
+
 /*================= NAVIGATION ======================*/
 
 nav {
   display: flex;
   background-color: var(--quinary-color);
-  
-
   
   position: fixed;
   top: 0;
@@ -203,7 +202,7 @@ body.menu-expanded .menu {
   background: var(--quinary-color);
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 
   transition: transform 500ms;
   transform: translateX(0);
@@ -265,7 +264,7 @@ body.menu-expanded button {
 
 #home {
   padding-block: 0;
-  padding-top: calc(4.1rem + var(--nav-height));
+  padding-top: calc(2.8rem + var(--nav-height));
 }
 
 #home::before {
@@ -300,13 +299,6 @@ body.menu-expanded button {
 
 #home p:first-child {
   margin-bottom: 2rem;
-}
-
-#home img {
-  /* width: 26.4rem;
-  display: block;
-  margin-inline: auto;
-  object-position: 0 2rem; */
 }
 
 #home .brands h3 {
@@ -348,8 +340,7 @@ body.menu-expanded button {
 /*===================== FACETER ==============================*/
 
 #faceter {
-  padding-top: calc(3rem - var(--nav-height));
-  /* padding-bottom: 4.1rem; */
+  padding-top: calc(var(--nav-height));
 }
 
 #faceter .content h3 {
@@ -417,14 +408,13 @@ figcaption {
 /*====================== SERVICES ================================*/
 
 #services {
-  padding: calc(3rem - var(--nav-height));
+  padding-top: calc(3rem + var(--nav-height));
   background-color: var(--secondary-color);
   text-align: left;
-  padding-bottom: 3rem;
 }
 
 #services .wrapper {
-  padding-top: 3rem;
+  margin-top: 2.9rem;
 }
 
 #services .content header h6 {
@@ -462,8 +452,12 @@ figcaption {
 
 /*====================== ABOUT ================================*/
 #about {
-  padding: 3rem 0 3rem;
+  padding-top: calc(3rem + var(--nav-height));
   text-align: left;
+}
+
+#about .wrapper {
+  margin-top: 2.9rem;
 }
 
 #about .content header h6 {
