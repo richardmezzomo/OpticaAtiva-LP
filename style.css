@@ -554,3 +554,113 @@ figcaption {
   visibility: visible;
   transform: translateY(0);
 }
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(122rem, 100%);
+  }
+
+  section {
+    padding-block: 16rem;
+  }
+
+  section header h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+    /*=== NAVIGATION =================================*/
+  /* reset */
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu,
+  nav#navigation .social-links {
+    display: none;
+  }
+
+  nav#navigation .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav#navigation .menu {
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+  }
+
+  nav#navigation .menu .button {
+    background: var(--quinary-color)
+  
+    border: 1px solid #EC4926;
+    border-radius: 2.5rem;
+  
+    padding: 1.3rem 3rem;
+    width: fit-content;
+  
+    color: var(--span-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+  
+    text-decoration: none;
+  
+    transition: background 200ms;
+  }
+  
+  nav#navigation .menu .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  nav#navigation .menu ul:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  nav#navigation .menu ul li a {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+    color: #EC4926;
+
+    opacity: 0.7;
+  }
+
+  nav#navigation .menu ul li a:hover {
+    font-weight: 700;
+    opacity: 1;
+  }
+
+  nav#navigation .wrap .logo img {
+    width: 150px;
+    height: 110px;
+  }
+}
