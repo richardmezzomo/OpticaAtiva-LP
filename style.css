@@ -264,7 +264,7 @@ body.menu-expanded button {
 
 #home {
   padding-block: 0;
-  padding-top: calc(2.8rem + var(--nav-height));
+  padding-top: calc(3rem + var(--nav-height));
 }
 
 #home::before {
