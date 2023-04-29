@@ -417,7 +417,7 @@ figcaption {
 /*====================== SERVICES ================================*/
 
 #services {
-  padding: calc(3rem - var(--nav-height));
+  padding-top: calc(3rem + var(--nav-height));
   background-color: var(--secondary-color);
   text-align: left;
   padding-bottom: 3rem;
@@ -462,7 +462,8 @@ figcaption {
 
 /*====================== ABOUT ================================*/
 #about {
-  padding: 3rem 0 3rem;
+  padding-top: calc(4rem + var(--nav-height));
+  padding-bottom: 3rem;
   text-align: left;
 }
 
