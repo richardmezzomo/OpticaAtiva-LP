@@ -15,6 +15,7 @@
   --headline-color: #212529;
   --paragraph-color: #495057;
   --span-color: #EC4926;
+  --bg-brands: #F4EBEB;
 
   /*=== FONT FAMILY ===*/
   font-size: 62.5%;
@@ -301,7 +302,7 @@ body.menu-expanded button {
   margin-bottom: 2rem;
 }
 
-#home .brands h3 {
+#brands .carrousel h3 {
   font-size: 3rem;
   color: var(--headline-color);
   line-height: 130%;
@@ -310,14 +311,8 @@ body.menu-expanded button {
   margin-bottom: 2rem;
 }
 
-#home .brands p {
-  margin: 0;
-  color: var(--primary-color);
-  font-size: 1.6rem;
-  line-height: 150%;
-}
 
-#home .brands .swiper-container img {
+#brands .carrousel .swiper-container img {
   width: 100px;
   height: 100px;
 }
@@ -325,6 +320,10 @@ body.menu-expanded button {
 .swiper-container {
   padding: 0 1rem;
   padding-inline: 0;
+}
+
+.swiper-container-desktop {
+  display: none;
 }
 
 .swiper.mySwiper {
@@ -663,4 +662,78 @@ figcaption {
     width: 150px;
     height: 110px;
   }
+
+  /*========================= HOME DESKTOP ===============================================*/
+
+  #home {
+    padding-top: calc(10rem + var(--nav-height));
+  }
+
+  #home .wrapper .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "col-a col-b";
+    gap: 16.5rem;
+  }
+
+  #home .wrapper .col-a {
+    grid-area: col-a;
+  }
+
+  #home .wrapper .col-a header h4 {
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+  }
+
+  #home .wrapper .col-a header h2 {
+    font-size: 4rem;
+    line-height: 130%;
+  }
+
+  #home .wrapper .col-a .content p {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+  
+  #home .wrapper .col-b {
+    grid-area: col-b;
+    background-image: url("./assets/images/img-home.png");
+    width: 57rem;
+    height: 56.5rem;
+    position: absolute;
+    right: 0;
+    top: 13rem;
+  }
+
+  /*============================ BRANDS =============================================*/
+  
+  #brands .carrousel .swiper-container {
+    display: none;
+  }
+
+  #brands  {
+    background-color: var(--bg-brands);
+    padding-block: 0;
+    padding: 2rem 0;
+    margin-top: 13.3rem;
+    
+  }
+
+  #brands .carrousel {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  #brands .carrousel .swiper-container-desktop {
+    display: flex;
+  }
+
+
+
+
+
 }

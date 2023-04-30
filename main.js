@@ -68,7 +68,8 @@ ScrollReveal({
 }).reveal(`
   #home, 
   #home img, 
-  #home .brands, 
+  #home, 
+  #brands,
   #faceter header,
   #faceter .texts,
   #faceter .img-faceter,
@@ -83,6 +84,11 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   freeMode: true,
   width: 500,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 const swiperModels = new Swiper(".mySwiperModels", {
@@ -94,4 +100,11 @@ const swiperModels = new Swiper(".mySwiperModels", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+const swiperDesktop = new Swiper(".mySwiper-desktop", {
+  slidesPerView: 6,
+  freeMode: true,
+  width: 800,
+  loop: true,
 });
