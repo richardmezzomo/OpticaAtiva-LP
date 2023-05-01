@@ -612,7 +612,7 @@ figcaption {
   }
 
   nav#navigation .menu .button {
-    background: var(--quinary-color)
+    background: var(--quinary-color);
   
     border: 1px solid #EC4926;
     border-radius: 2.5rem;

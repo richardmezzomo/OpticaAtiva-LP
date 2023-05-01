@@ -100,6 +100,10 @@ const swiperModels = new Swiper(".mySwiperModels", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 const swiperDesktop = new Swiper(".mySwiper-desktop", {
