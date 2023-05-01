@@ -420,6 +420,8 @@ figcaption {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  
 }
 
 #services .content header h3 {
@@ -465,6 +467,7 @@ figcaption {
   letter-spacing: 0.08em;
   color: var(--span-color);
   padding-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 #about .content header h3 {
@@ -715,6 +718,11 @@ figcaption {
     display: none;
   }
 
+  #brands .carrousel h3 {
+    font-size: 4rem;
+    line-height: 130%;
+  }
+
   #brands  {
     background-color: var(--bg-brands);
     padding-block: 0;
@@ -731,6 +739,117 @@ figcaption {
   #brands .carrousel .swiper-container-desktop {
     display: flex;
   }
+
+  /*=============================== FACETER ===================================*/
+
+  #faceter {
+    padding-block: 10rem;
+  }
+
+  #faceter .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #faceter .wrapper .content {
+    width: 50%;
+  }
+
+  #faceter .wrapper .content header h3 {
+    font-size: 4rem;
+  }
+
+  #faceter .wrapper .content header span {
+    font-size: 1.8rem;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+  }
+
+  #faceter .wrapper .content .texts {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+
+  #faceter .wrapper .img-faceter img {
+    width: 381px;
+    height: 450px;
+  }
+
+
+  /*======================= SERVICES ===============================*/
+
+  #services .wrapper .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4.5rem;
+    margin-top: 5rem;
+  }
+
+  #services .wrapper .content header h6 {
+    font-size: 4rem;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;  
+  }
+
+  #services .wrapper .content header h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  /*========================== ABOUT ======================================*/
+
+  #about .wrapper .content header h6{
+    font-size: 4rem;
+    line-height: 150%;
+    
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+  }
+
+  #about .wrapper .content header h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  #about .wrapper .content p {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+
+  #about .wrapper .swiper-slide img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /*========================== CONTACT ======================================*/
+
+  #contact .wrapper .content header h6 {
+    font-size: 4rem;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+  }
+
+  #contact .wrapper .contact img {
+    width: 25px;
+    height: 32px;
+  }
+
+  #contact .wrapper .contact p {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+
+  #contact .wrapper .contact .social-links img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #contact .wrapper .contact .social-links a img:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+  }
+
 
 
 
