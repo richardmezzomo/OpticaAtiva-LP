@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Óptica Ativa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <script src="main.js" defer></script>
+
+  <link rel="shortcut icon" href="./favi.ico/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <div class="wrap">
+      <a href="#home" class="logo">
+        <img src="./assets/logo.svg" alt="logo Óptica Ativa">
+      </a>
+
+      <button
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        onclick="openMenu()"
+        class="open-menu"
+      >
+        <img src="./assets/open-menu.svg" alt="">
+      </button>
+      <button
+        aria-expanded="true"
+        aria-label="Fechar menu"
+        onclick="closeMenu()"
+        class="close-menu"
+      >
+        <img src="./assets/close-menu.svg" alt="">
+      </button>
+    </div>
+
+      <div class="menu">
+
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
+          <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+          <li><a onclick="closeMenu()" href="#contact">Entre em contato</a></li>
+        </ul>
+
+        <a onclick="closeMenu()" href="https://wa.me/5548991095328" target="_blank" class="button">
+          Fale conosco
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://wa.me/5548991095328" target="_blank">
+              <img src="./assets/whatsapp.svg" alt="logo whatsapp">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com/opticaativa" target="_blank">
+              <img src="./assets/instagram.svg" alt="logo instagram">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://facebook.com/opticaativa" target="_blank">
+              <img src="./assets/facebook.svg" alt="logo facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="wrapper">
+      <div class="grid">
+        <div class="col-a">
+          <header>
+            <h4>A ÓPTICA MAIS COMPLETA</h4>
+            <h1>Atendimento especializado</h1>
+          </header>
+  
+          <div class="content">
+            <p>
+              Nós da Óptica Ativa investimos sempre no que é melhor para você.
+            </p>
+            <p>
+              Por isso conseguimos entregar seus óculos em até 15 minutos.
+            </p>
+            <a class="button" href="https://wa.me/5548991095328" target="_blank">
+              Fale conosco
+            </a>
+          </div>
+        </div>
+        <div class="col-b"></div>
+      </div>
+    </div>
+  </section>
+  <section id="brands">
+    <div class="carrousel">
+      <h3>Marcas de armações</h3>
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/ray-ban.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/guess.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/max&co.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/lovemosquino.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/vogue.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/polaroid.svg" alt="">
+            </div>              
+          </div>            
+        </div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/tommy-hilfiger.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/hb.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/stepper.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/lavorato.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/eg.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/jean-pierre.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container-desktop">
+        <div class="swiper mySwiper-desktop">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/ray-ban.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/guess.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/max&co.svg" alt="">
+            </div>              
+            <div class="swiper-slide">
+              <img src="./assets/images/vogue.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/lovemosquino.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/polaroid.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/tommy-hilfiger.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/hb.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/stepper.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/lavorato.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/eg.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/jean-pierre.svg" alt="">
+            </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faceter">
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h3>Delta 200</h3>
+          <span>A TECNOLOGIA QUE NOS PERMITE ENTREGAR SEU ÓCULOS EM ATÉ 15 MINUTOS</span>
+        </header>
+        <div class="texts">
+          <p>
+            Delta 200 é uma máquina facetadora da Essilor que funciona para o recorte de lentes que combinada com o nosso vasto estoque permite que você tenha o seu óculos em até <strong>15 minutos.</strong>                                       
+          </p>
+          <p>
+            Com ela, não é mais preciso enviar o seu óculos para o laboratório e ficar esperando ansiosamente por dias até que ele fique pronto.
+          </p>
+          <p>
+            Agora basta você escolher sua armação e o tipo da sua lente.
+          </p>
+          <p>
+            Confira como funciona essa tecnologia:
+          </p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=kjJBPS5Dess" target="_blank" class="button">VER VIDEO</a>
+      </div>
+
+      <figure class="img-faceter">
+        <img src="./assets/images/delta200.png" alt="">
+        <figcaption>* consulte regulamento em nossa loja</figcaption>
+      </figure>
+      
+    </div>
+  </section>
+  <section id="services">
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h6>
+            <span>Serviços</span>
+          </h6>
+          <h3>Qualidade no atendimento e serviços prestados</h3>
+        </header>
+      </div>
+      <div class="cards">
+        <div class="optics">
+          <h5>Óptica</h5>
+          <p>
+            Aqui você encontra diversos modelos de armações para todos os formatos de rosto. 
+          </p>
+          <p>
+            Prezamos pelas diretrizes técnicas para entregar a você o óculos ideal.
+          </p>
+          <p>
+            E para protegermos nossos olhos dos raios ultravioletas, possuímos uma vasta diversidade de óculos solares.
+          </p>
+          <p>
+            Além de termos a nossa visão protegida dos raios, temos um acessório que é para lá de charmoso.
+          </p>
+        </div>
+        <div class="fixes">
+          <h5>Consertos</h5>
+          <p>
+            Contamos com uma oficina de consertos completa.
+          </p>
+          <p>
+            Fazemos desde consertos em relógios à consertos de joias e polimento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h6>
+            <span>Sobre nós</span>
+          </h6>
+          <h3>Entenda quem somos e por que existimos</h3>
+        </header>
+        <p>
+          Óptica e Relojoaria Ativa foi fundada na ilha de Santa Catarina no ano de 2005, oriunda de outra óptica que está instalada desde 1985 no Rio Grande do Sul ainda em atividade na cidade de Tapejara/RS.              
+        </p>
+        <p>
+          A Óptica tem o intuito de satisfazer às necessidades do morador e do comércio do Norte da Ilha em vista ao mercado ótico.
+        </p>
+        <p>
+          Nosso foco é no atendimento personalizado e na satisfação plena do cliente tanto na venda como no pós-venda com mercadorias de qualidade aliada à bom preço, só assim, conseguimos fidelizar nosso cliente tornando-o um amigo.
+        </p>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper mySwiperModels">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/model-1.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-2.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-3.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-4.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-5.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-6.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-7.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-8.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-9.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/model-10.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h6>Entre em contato com a gente!</h6>
+        </header>
+        <div class="contact">
+          <div class="location">
+            <img src="./assets/location-icon.svg" alt="">
+            <p>R. Intendente João Nunes Vieira, 718 sala 02</p>
+          </div>
+          <div class="email">
+            <img src="./assets/email-icon.svg" alt="">
+            <p>opticaativa@gmail.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https://wa.me/5548991095328" target="_blank">
+              <img src="./assets/whatsapp-white.svg" alt="">
+            </a>
+            <a href="https://instagram.com/opticaativa" target="_blank">
+              <img src="./assets/instagram-white.svg" alt="">
+            </a>  
+            <a href="https://facebook.com/opticaativa" target="_blank">
+              <img src="./assets/facebook-white.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/5548991095328" target="_blank" class="button">Fale Conosco</a>
+      <div class="design">
+        <a href="#">
+          <p>Design por Endie Guedes</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <a id="backToTopButton" href="#home">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="20" cy="20" r="20" fill="#be3c1e" />
+      <path
+        d="M20 27V13"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13 20L20 13L27 20"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </a>
+  
+  
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+</html>
