@@ -124,16 +124,11 @@ section .content p {
   transition: background 200ms;
 }
 
-.button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
 .social-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 
@@ -509,6 +504,7 @@ figcaption {
   padding: 3rem 0 3rem;
   background-color: var(--secondary-color);
   text-align: left;
+
 }
 
 #contact .content header h6 {
@@ -524,17 +520,47 @@ figcaption {
   gap: 1rem;
   color: var(--primary-color);
   padding-bottom: 2rem;
+  align-items: center;
+}
+
+#contact .content .contact .location img, 
+#contact .content .contact .email img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#contact .content .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact .content .social-links img {
+  width: 2rem;
+  height: 2rem;
 }
 
 #contact .button {
   margin: 0 auto;
-  margin-top: 2rem;
 }
 
-#contact .button:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  transform: scale3d(1.1, 1.1, 1.1);
+#contact .design a {
+  text-decoration: none;
+}
+
+#contact .design {
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem 0 0;
+}
+
+#contact .design p {
+  color: var(--primary-color);
+font-size: 1.2rem;
+font-family: DM Sans;
+line-height: 150%; 
 }
 
 /* ===================== BACK TO TOP ============================ */
@@ -841,13 +867,39 @@ figcaption {
     line-height: 150%;
   }
 
+  #contact .wrapper .contact .social-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   #contact .wrapper .contact .social-links img {
-    width: 25px;
-    height: 25px;
+    height: 3.5rem;
   }
 
   #contact .wrapper .contact .social-links a img:hover {
     transform: scaleX(1.2) scaleY(1.2);
+  }
+
+  #contact .button {
+    display: none;
+  }
+
+  #contact .design a {
+    text-decoration: none;
+  }
+  
+  #contact .design {
+    display: flex;
+    justify-content: flex-end;
+  
+    margin: .7rem 0 .5rem;
+  }
+  
+  #contact .design p {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-family: DM Sans;
+    line-height: 150%; 
   }
 
 
